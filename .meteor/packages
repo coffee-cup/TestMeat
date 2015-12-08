@@ -1,0 +1,5 @@
+standard-app-packages
+iron:router
+fourseven:scss
+sanjo:jasmine
+velocity:html-reporter

@@ -1,0 +1,63 @@
+@import 'normalize';
+@import 'animate';
+@import 'sass-css3-mixins';
+@import 'susy';
+@import 'fonts';
+@import 'variables';
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", "Helvetica", sans-serif;
+  color: $dark-text;
+}
+
+h1, h2 {
+  font-weight: 200;
+}
+
+.header {
+  height: 61.804697157vh;
+  position: relative;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  background-color: $main-colour;
+
+  @include span(11 of 12);
+  @include prefix(1 of 12);
+
+  .header-text {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.para {
+  @include container(60%);
+  line-height: 1.5em;
+}
+
+footer {
+  background-color: $main-colour;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: $dark-text;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $dark-text;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
