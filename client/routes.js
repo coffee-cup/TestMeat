@@ -3,9 +3,12 @@ Router.configure({
   loadingTemplate: 'loading'
 });
 
-Router.route('/', {name: 'home', controller: 'MainController'});
+Router.route('/', {name: 'home', controller: 'HomeController'});
 Router.route('/about', {
-  name: 'about'
+  name: 'about',
+  waitOn: function() {
+    // return Meteor.subscribe('items');
+  }
 });
 
 MainController = RouteController.extend({
@@ -15,6 +18,12 @@ MainController = RouteController.extend({
 	      return { posts: ['post red', 'post blue'] }
 	    }
   	});
+  }
+});
+
+HomeController = MainController.extend({
+  action: function() {
+    this.render('home');
   }
 });
 

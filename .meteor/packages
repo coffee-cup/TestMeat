@@ -3,3 +3,7 @@ iron:router
 fourseven:scss
 sanjo:jasmine
 velocity:html-reporter
+standard-minifiers
+aldeed:collection2
+momentjs:moment
+raix:handlebar-helpers
