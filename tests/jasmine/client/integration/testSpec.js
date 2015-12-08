@@ -1,5 +1,5 @@
 describe('test', function() {
-  it('tests header-text', function() {
+  it('test header-text', function() {
     expect($('.header-text').text().trim()).toEqual('Hello, How are you?');
   });
 
